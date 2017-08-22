@@ -1,0 +1,6 @@
+[Unit]
+Description=Telnet Server
+
+[Service]
+ExecStart=/usr/sbin/in.telnetd
+StandardInput=socket

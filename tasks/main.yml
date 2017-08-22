@@ -1,2 +1,4 @@
 ---
-# tasks file for ansible-role-telnet
+
+- import_tasks: telnetd.yml
+  when: telnetd_enabled == true

@@ -1,0 +1,15 @@
+---
+
+- name: Install systemd socket
+  copy:
+    src: telnetd.socket
+    dest: /etc/systemd/system/telnetd.socket
+    mode: 644
+  notify: restart socket
+
+- name: Install systemd service
+  copy:
+    src: telnetd@.service
+    dest: /etc/systemd/system/telnetd@.service
+    mode: 644
+  notify: restart socket

@@ -1,0 +1,7 @@
+---
+
+- name: Install telnetd
+  apt:
+    name: "{{ item }}"
+  with_items:
+  - telnetd

@@ -1,0 +1,9 @@
+[Unit]
+Description=Telnetd socket
+
+[Socket]
+ListenStream=23
+Accept=yes
+
+[Install]
+WantedBy=sockets.target
