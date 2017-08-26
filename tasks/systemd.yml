@@ -1,5 +1,12 @@
 ---
 
+- name: Disable inetd
+  systemd:
+    name: inetd.service
+    state: stopped
+    enabled: no
+  notify: restart socket
+
 - name: Install systemd socket
   copy:
     src: telnetd.socket
