@@ -1,5 +1,5 @@
 [Unit]
-Description=Telnetd socket
+Description=Telnetd service socket
 
 [Socket]
 ListenStream=23
