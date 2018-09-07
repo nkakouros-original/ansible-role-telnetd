@@ -20,3 +20,9 @@
     dest: /etc/systemd/system/telnetd@.service
     mode: 644
   notify: restart socket
+
+- name: Start the telnetd socket
+  systemd:
+    name: telnetd.socket
+    state: started
+    enabled: yes
